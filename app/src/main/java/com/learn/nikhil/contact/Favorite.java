@@ -46,9 +46,7 @@ public class Favorite extends Fragment {
                 for (int j = 0; j<getfav.size();j++){
                     String temp = getfav.get( j ).getFav_contactid();
                     if (temp.equals( id )){
-                        getfav.remove( temp );
-                        getfav.remove( getfav.get( j ).getFav_contactname() );
-                        getfav.remove( getfav.get( j ).getFav_contactnumber() );
+                        getfav.remove( j);
 
                     }
                 }
