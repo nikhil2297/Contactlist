@@ -44,21 +44,7 @@ public class favoriteAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
         layout.contactnum.setText( "   " + fav_details.getFav_contactnumber() );
         layout.contactname.setText( "   " + fav_details.getFav_contactname() );
-        if (flag.equals( "false" )){
-            Toast.makeText( context, "hello", Toast.LENGTH_SHORT ).show();
-            for (int k = 0 ;k< getfav.size();k++){
-                for (int j = 0; j<getfav.size();j++){
-                    String temp = getfav.get( j ).getFav_contactid();
-                    if (temp.equals( id )){
-                        getfav.remove( temp );
-                        getfav.remove( getfav.get( j ).getFav_contactname() );
-                        getfav.remove( getfav.get( j ).getFav_contactnumber() );
-
-                    }
-                }
-            }
-
-        }
+        
     }
 
 
